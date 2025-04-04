@@ -1,0 +1,50 @@
+$date
+    Fri Apr 4 12:34:56 2025
+$end
+$version
+    Icarus Verilog
+$end
+$timescale
+    1s
+$end
+$scope module stimulus $end
+$var wire 64 ! read_data2 [63:0] $end
+$var wire 64 " read_data1 [63:0] $end
+$var reg 1 # clock $end
+$var reg 5 $ read_reg_num1 [4:0] $end
+$var reg 5 % read_reg_num2 [4:0] $end
+$var reg 1 & regwrite $end
+$var reg 1 ' reset $end
+$var reg 64 ( write_data [63:0] $end
+$var reg 5 ) write_reg [4:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx )
+bx (
+bx %
+bx $
+bx "
+bx !
+0#
+0&
+1'
+$end
+#10
+b0000000000000000000000000000000000000000000000000000000000010100 (  // write_data = 64'd20
+b0000000000000000000000000000000000000000000000000000000000010100 "
+b00000 $ 
+b00000 %
+1#
+b00000 )
+1&
+0'
+#20
+b0000000000000000000000000000000000000000000000000000000000010100 !
+b0000000000000000000000000000000000000000000000000000000000010100 "
+b00001 )
+b00001 $
+b0000000000000000000000000000000000000000000000000000000000011110 (  // write_data = 64'd30
+#30
+...
