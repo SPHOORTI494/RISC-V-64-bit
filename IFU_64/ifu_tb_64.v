@@ -1,4 +1,4 @@
-`include "IFU.v"
+`include "ifu.v"
 
 module stimulus();
 
